@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="/img/icon/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Подбор дверей</title>
+
+<body>
+
+    <section class="main">
+        <header class="main-header">
+            <div class="main-header_logo">
+                <a href="https://цсд.рф"><img src="img/icon/logo.png" alt="logo"></a>
+            </div>
+            <div class="main-header_text">
+                Центр Стальных и Межкомнатных Дверей
+            </div>
+            <div class="main-header_contact">
+                <a href="tel:+78123392280">+7(812)339-22-80</a>
+                <span> c 10:00 до 20:00</span>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content-start">
+                <div class="content-start_title">
+                    Подберите дверь за несколько кликов <br> и получите специальное предложение!
+                </div>
+                <div class="content-start_btn">
+                    Начать подбор
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_type">
+                <div class="content-quiz_title">
+                    Какой тип двери вас интересует?
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item typeVhod" data-type="Тип двери: Входные">
+                            Входные
+                            <img class="first" src="img/bg/mfd-inside.png" alt="">
+                        </div>
+                        <div class="content-quiz_options-item typeMezh" data-type="Тип двери: Межкомнатные">
+                            Межкомнатные
+                            <img class="second" src="img/bg/mfd-outside.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevTypeBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnTypeDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+
+            <!-- Межкомнатные двери -->
+
+            <div class="content-quiz content-quiz_style">
+                <div class="content-quiz_title">
+                    Какой стиль двери вас интересует?
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item" data-style="Стиль двери: Классика">
+                            Классика
+                            <img class="first" src="img/bg/mfd-inside.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-style="Стиль двери: Хай-тек">
+                            Хай-тек
+                            <img class="second" src="img/bg/mfd-outside.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item" data-style="Стиль двери: Модерн">
+                            Модерн
+                            <img class="first" src="img/bg/mfd-inside.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-style="Стиль двери: Минимализм">
+                            Минимализм
+                            <img class="second" src="img/bg/mfd-outside.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevStyleBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnStyleDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_accessory">
+                <div class="content-quiz_title">
+                    Какие дополнительные аксессуары вам необходимы
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-accessory="Дополнительные аксессуары: Ручки">
+                            Ручки
+                            <img class="accessory accessory-more" src="img/bg/ruchki.png" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-accessory="Дополнительные аксессуары: Замки">
+                            Замки 
+                            <img class="accessory accessory-more" src="img/bg/zamki.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-accessory="Дополнительные аксессуары: Наличники">
+                            Наличники
+                            <img class="accessory" src="img/bg/nalichnik.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevAccessoryBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnAccessoryDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_destroy">
+                <div class="content-quiz_title">
+                    Потребуется ли демонтаж старых дверей
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-destroy="Потребуется ли демонтаж старых дверей: Да">
+                            Да
+                            <img class="first" src="" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-destroy="Потребуется ли демонтаж старых дверей: Нет">
+                            Нет 
+                            <img class="second" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevDestroyBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnFormDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Входные двери             -->
+
+            <div class="content-quiz content-quiz_location">
+                <div class="content-quiz_title">
+                    На каком участке необходимо установить двери?
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item locationVillage" data-location="На каком участке необходимо установить двери: Загородный дом">
+                            Загородный дом
+                            <img class="first" src="img/bg/mfd-inside.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item locationHouse" data-location="На каком участке необходимо установить двери: Квартира, офис">
+                            Квартира, офис
+                            <img class="second" src="img/bg/mfd-outside.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevLocationBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnLocationDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+
+            <!-- Загородный дом -->
+
+            <div class="content-quiz content-quiz_village">
+                <div class="content-quiz_title">
+                    Выберите тип двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-village="Тип двери: Стандарт (до 15 000 руб.)">
+                            Стандарт (до 15 000 руб.)
+                            <img class="first" src="img/bg/mfd-inside.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-village="Тип двери: Стеклопакет">
+                            Стеклопакет
+                            <img class="second" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-village="Тип двери: Терморазрыв">
+                            Терморазрыв
+                            <img class="first" src="img/bg/mfd-inside.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevVillageBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnFormDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+
+            <!-- Квартира, офис -->
+
+            <div class="content-quiz content-quiz_budget">
+                <div class="content-quiz_title">
+                    Укажите Ваш бюджет
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item budgetLow" data-budget="Ваш бюджет: Бюджет до 8000 000 руб.">
+                            Бюджет до 8 000 руб.
+                            <img class="first" src="img/bg/" alt="">
+                        </div>
+                        <div class="content-quiz_options-item budget8" data-budget="Ваш бюджет: Бюджет от 8000 до 15000 000 руб.">
+                            Бюджет от 8000 до 15 000 руб.
+                            <img class="second" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item budget15" data-budget="Ваш бюджет: Бюджет от 15000 до 24000 000 руб.">
+                            Бюджет от 15000 до 24 000 руб.
+                            <img class="first" src="img/bg/" alt="">
+                        </div>
+                        <div class="content-quiz_options-item budget24" data-budget="Ваш бюджет: Бюджет более 24000 000 руб.">
+                            Бюджет более 24 000 руб.
+                            <img class="first" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevBudgetBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnBudgetDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_coating8">
+                <div class="content-quiz_title">
+                    Выберите внутренне покрытие двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating8="Внутреннее покрытие двери: Порошковое напыление">
+                            Порошковое напыление
+                            <img class="first" src="img/bg/poroshkovoe-napilenie.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item " data-coating8="Внутреннее покрытие двери: Панель МДФ">
+                            Панель МДФ
+                            <img class="first" src="img/bg/mfd-inside.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating8="Внутреннее покрытие двери: С зеркалом">
+                            С зеркалом
+                            <img class="first" src="img/bg/mirror.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevCoating8Btn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnFormDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_coating15">
+                <div class="content-quiz_title">
+                    Выберите внешнее покрытие двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating15="Внешнее покрытие двери: Порошковое напыление">
+                            Порошковое напыление
+                            <img class="first" src="img/bg/poroshkovoe-napilenie.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-coating15="Внешнее покрытие двери: Панель МДФ">
+                            Панель МДФ
+                            <img class="second" src="img/bg/mfd-outside.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item" data-coating15="Внешнее покрытие двери: Со стеклопакетом">
+                            Со стеклопакетом
+                            <img class="second" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevCoating15Btn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnCoating15OutsideDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_coating15out">
+                <div class="content-quiz_title">
+                    Выберите внутреннее покрытие двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating15out="Внутреннее покрытие двери: Порошковое напыление">
+                            Порошковое напыление
+                            <img class="first" src="img/bg/poroshkovoe-napilenie.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-coating15out="Внутреннее покрытие двери: Панель МДФ">
+                            Панель МДФ
+                            <img class="second" src="img/bg/mfd-inside.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating15out="Внутреннее покрытие двери: Со стеклопакетом">
+                            Со стеклопакетом
+                            <img class="first" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevCoating15OutBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnFormDoor nextBtnForm24OutDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_coating24">
+                <div class="content-quiz_title">
+                    Выберите внешнее покрытие двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating24="Внешнее покрытие двери: Порошковое напыление">
+                            Порошковое напыление
+                            <img class="first" src="img/bg/poroshkovoe-napilenie.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-coating24="Внешнее покрытие двери: Панель МДФ">
+                            Панель МДФ
+                            <img class="second" src="img/bg/mfd-outside.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item" data-coating24="Внешнее покрытие двери: Со стеклопакетом">
+                            Со стеклопакетом
+                            <img class="second" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevCoating24Btn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnCoating24OutsideDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+            <div class="content-quiz content-quiz_coating24out">
+                <div class="content-quiz_title">
+                    Выберите внутреннее покрытие двери
+                </div>
+                <div class="content-quiz_options">
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating24out="Внутреннее покрытие двери: Порошковое напыление">
+                            Порошковое напыление
+                            <img class="first" src="img/bg/poroshkovoe-napilenie.jpg" alt="">
+                        </div>
+                        <div class="content-quiz_options-item" data-coating24out="Внутреннее покрытие двери: Панель МДФ">
+                            Панель МДФ
+                            <img class="second" src="img/bg/mfd-inside.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content-quiz_options-block">
+                        <div class="content-quiz_options-item " data-coating24out="Внутреннее покрытие двери: Со стеклопакетом">
+                            Со стеклопакетом
+                            <img class="first" src="img/bg/" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-quiz_navigation">
+                    <div class="content-quiz_navigation-btn prevBtn prevCoating24OutBtn">
+                        Назад
+                    </div>
+                    <div class="content-quiz_navigation-btn content-quiz_navigation-btn_next nextBtnFormDoor nextBtnForm24OutDoor">
+                        Далее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-send">
+            <div class="form-send_left">
+                <div class="form-send_title">
+                    Благодарим за прохождения подбора <br>
+                    Вы можете посмотреть подобранные для вас двери
+                </div>
+                <a blank_ class="form-send_link" href="https://цсд.рф">Перейти к дверям</a>
+            </div>
+            <div class="form-send_right">
+                <div class="form-send_subtitle">
+                    Оставьте свои данные и получите промокод на скидку
+                </div>
+                <form action="send.php" method="POST" class="form-send_block quiz-form">
+                    <input type="text" name="name" class="form-send_input" placeholder="Ваше имя">
+                    <input type="text" name="phone" class="form-send_input" placeholder="Ваш номер телефона">
+                    <textarea name="textarea" class="form-send_textarea" placeholder="Ваши пожелания"></textarea>
+                    <input type="submit" class="form-send_send">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
