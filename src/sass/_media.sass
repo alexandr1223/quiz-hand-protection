@@ -42,7 +42,7 @@
             width: 100%
             height: max-content !important
             margin: 0 auto
-            min-height: 300px
+            min-height: 220px
             &__title
                 font-size: 24px
             &__subtitle
@@ -51,12 +51,12 @@
                 margin-top: 0
             &__block
                 grid-gap: 20px
-                grid-template-columns: 270px 270px
+                grid-template-columns: 370px 370px
             &__item
                 width: 100%
                 min-width: 50px
                 font-size: 15px
-                padding: 16px 20px
+                padding: 20px 20px
                 margin: 6px
                 height: max-content
                 display: flex
@@ -217,6 +217,7 @@
         width: 100%
         background-size: 100% 100%
         height: 100%
+        background: #ffffff
         &-header
             padding: 6px 20px
             justify-content: space-between
@@ -239,20 +240,30 @@
         flex-direction: column
         position: static
         transform: translate(0)
-        background: #fff
         border-radius: 0px
+        background: #ffffff
         &-left
             width: 100%
             order: 2
             border-right: none
             margin-top: 20px
             margin-right: 0
+            &__first-screen
+                width: 80%
+                max-width: 600px
+                transform: translate(-50%, -70%)
+                h1
+                    font-size: 24px
+            &__first-btn
+                font-size: 16px
+                padding: 14px 20px
+                width: 150px
         &-right
             width: 100%
             order: 1
             background: #ECEFF1
             padding: 14px
-            border-radius: 6px
+            border-radius: 10px
             &__title
                 text-align: left
             &__subtitle
@@ -277,10 +288,17 @@
             transform: translate(0)
             margin-top: 0
             padding: 0
+            &__progress
+                &--title
+                    font-size: 15px
+                &--block
+                    height: 5px
+            &__line
             &__title
                 font-size: 18px
                 margin-bottom: 20px
                 line-height: 25px
+                min-height: auto
                 span
                     display: block
                     font-size: 14px
@@ -303,7 +321,7 @@
                 font-size: 14px
                 padding: 14px 18px
                 margin: 6px 0
-                border-radius: 4px
+                border-radius: 10px
                 min-width: 100%
                 height: max-content
                 display: flex
@@ -318,8 +336,9 @@
             &__prev
                 width: 120px
                 margin-left: 0
-                border-radius: 4px
-                padding: 10px 0
+                border-radius: 10px
+                padding: 14px 0
+                font-size: 14px
             
     .form-send
         width: 100%
@@ -330,6 +349,7 @@
             width: 100%
         &__block
             width: 100%
+            max-width: 400px
         &__title
             font-size: 18px
             margin-bottom: 20px
@@ -345,8 +365,12 @@
             height: max-content
             display: flex
         &__send
-            font-size: 15px
-            padding: 16px 20px
+            width: 160px
+            border-radius: 10px
+            padding: 14px 0
+            font-size: 14px
+            margin-top: 20px
+
 @media (max-width: 360px) 
     .main
         &-header

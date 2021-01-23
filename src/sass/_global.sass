@@ -8,7 +8,7 @@ html
     overflow-x: hidden
 
 .check
-    border: 1px solid #3F282F
+    border: 2px solid rgba(81, 185, 5, 1)
     box-shadow: rgba(0,0,0,0.2) 2px 2px 10px 2px
 
 .blockShow
@@ -24,8 +24,13 @@ html
 
 .nextActive
     background: rgba(81, 185, 5, 1)
-    &:hover
+    cursor: pointer
+    &:hover  
         transform: translateY(-5px)
+        &:after 
+            left: 120%
+            transition: all 2s cubic-bezier(0.19, 1, 0.22, 1)
+       
 
 .prevActive
     opacity: 1
